@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="content-left">
+            <form action="#" class="form">
+                <div class="tieude">
+                    <h3 >NHẬP THÔNG TIN XE CỘ</h3>
+                </div> 
+                <div class="duoi">
+                    <h4 >Tên Xe <a style="color: red;">*</a>:</h4>
+                    <input class="nhap" type="text"required pattern="[0-9]\[a-z]\[A-Z]">
+                <h4 >Hình Ảnh:</h4 >
+                 <input class="nhap"  type="text"
+                class="text text2"
+                >
+                <h4 >Hãng Xe <a style="color: red;">*</a>:</h4 >
+                  <input class="nhap" type="text" placeholder="--Hãng Xe--"list="hangxe" name="hangxe" required pattern="[a-z]\[A-Z]" /> 
+                  <datalist id="hangxe">
+                    <form>
+                    <select aria-label="Swedish Cars nad German Cars nad England Cars 
+                        nad USA Cars">
+                    <optgroup label="Swedish Cars">
+                        <option value="Volvo">Volvo</option>
+                        <option value="Saab">Saab</option>
+                      </optgroup>
+                      <optgroup label="German Cars">
+                        <option value="Mercedes">Mercedes</option>
+                        <option value="Audi">Audi</option>
+                        <option value="Porsche">Porsche</option>
+                    <optgroup label="England Cars"></optgroup>
+                        <option value="Rolls-Royce">Rolls-Royce</option>
+                        <option value="BMW">BMW</option>
+                    <optgroup label="USA Cars"></optgroup>
+                        <option value="Cadillac">Cadillac</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                    </optgroup>
+                    </select>
+                    </form>
+                  </datalist> 
+                  <h4 >Giá Tiền <a style="color: red;">*</a>:</h4 >
+                <input class="nhap" min="0" type="number" step="0.1" required pattern="[0-9]"/>
+                <h4 >Mô Tả:</h4 >
+                <textarea rows="5" cols="40"></textarea>
+                <h4 >Người liên hệ <a style="color: red;">*</a>:</h4 >
+                <input class="nhap" type="text" required pattern="[a-z]\[A-Z]"/>
+                <h4 >Số điện thoại người liên hệ <a style="color: red;">*</a>:</h4 >
+                <input class="nhap" type="tel"required pattern="[\+][\(]\d{2}[\)]\S{9,}" title="Số điện thoại (Theo dạng: +(84)012345678)" >
+                <h4 >Email <a style="color: red;">*</a>:</h4 >
+                <input class="nhap" type="email" />
+                <p>
+                <input type="submit" value="Lưu" class="luu" />
+                <input type="reset" value="Xóa" class="xoa"/></p>
+                <!-- <p>
+                <button class="luu"  type="submit">Lưu</button>
+                <button class="xoa" type="reset">Xóa</button> </p> -->
+                </div>
+        </div>
+        <div class="content-right">
+            <div class="td">
+                <h3 style="font-weight: normal;">QUẢN LÝ DANH SÁCH XE CỘ</h3>
+            </div>
+            <input class="timkiem" class="timkiem" type="text" placeholder="Tìm kiếm ...">
+            <table  > 
+                <tr>
+                    <th>STT</th>
+                    <th>Hình Ảnh</th>
+                    <th>Tên Xe</th>
+                    <th>Hãng Xe</th>
+                    <th>Giá Tiền</th>
+                    <th>Người liên hệ</th>
+                    <th>Điện thoại</th>
+                    <th>Email</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+.container{
+    height: 800px;
+    width: 935px;
+    margin: 20px 20px auto;
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+.content-left{
+    width: 340px;
+    height: 870px;
+    background: white;
+    margin-left: 10px;
+    border: 1px solid #bdc3c7;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+.tieude{
+    padding-left: 10px;
+    height: 40px;
+    background:#16a3b5 ;
+    max-width: none; 
+    margin-top: -20px;
+}
+h3{color: white;
+padding-top: 8px;}
+.nhap {
+    height: 20px;
+    width: 310px;
+}
+.duoi{
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+.luu{
+    background: #27a844;
+    border: 1px ;
+    border-radius: 2px;
+    width: 50px;
+    height: 30px;
+    color: white;
+}
+.xoa{
+    background: #fec107;
+    border: 1px ;
+    border-radius: 2px;
+    width: 50px;
+    height: 30px;
+}
+label{
+    margin-top: 10px;
+}
+h4{
+    font-weight: normal;
+}
+.content-right{
+    height: auto;
+    width: 550px;
+    margin-left: 30px;
+    position: relative;
+    background: white ;
+    margin-top: 20px;
+}
+table{
+    border: 1px solid #bdc3c7 ;
+    margin-top: 15px;
+    width: auto;
+}
+.td{
+    padding-left: 10px;
+    height: 40px;
+    background:#16a3b5 ;
+    max-width: none; 
+    margin-top: -20px;
+    font-weight: normal;
+}
+.timkiem{
+    margin-top: 15px;
+    height: 35px;
+    width: 542px;
+}
+table, th, td {
+    border: 1px solid #bdc3c7;
+    border-collapse: collapse;
+}
+th, td {
+        padding: 5px;
+}
