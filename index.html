@@ -5,24 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>Document</title>
 </head>
 <body>
     <div class="container">
         <div class="content-left">
-            <form action="#" class="form">
+            <form action="#" class="form" name="thongtin">
                 <div class="tieude">
                     <h3 >NHẬP THÔNG TIN XE CỘ</h3>
                 </div> 
                 <div class="duoi">
                     <h4 >Tên Xe <a style="color: red;">*</a>:</h4>
-                    <input class="nhap" type="text"required pattern="[0-9]\[a-z]\[A-Z]">
+                    <input name="tenxe" class="nhap" type="text"required pattern="[0-9]\[a-z]\[A-Z]">
                 <h4 >Hình Ảnh:</h4 >
-                 <input class="nhap"  type="text"
+                 <input name="hinhanh" class="nhap"  type="text"
                 class="text text2"
                 >
                 <h4 >Hãng Xe <a style="color: red;">*</a>:</h4 >
-                  <input class="nhap" type="text" placeholder="--Hãng Xe--"list="hangxe" name="hangxe" required pattern="[a-z]\[A-Z]" /> 
+                  <input name="hangxe" class="nhap" type="text" placeholder="--Hãng Xe--"list="hangxe" name="hangxe" /> 
                   <datalist id="hangxe">
                     <form>
                     <select aria-label="Swedish Cars nad German Cars nad England Cars 
@@ -46,21 +47,18 @@
                     </form>
                   </datalist> 
                   <h4 >Giá Tiền <a style="color: red;">*</a>:</h4 >
-                <input class="nhap" min="0" type="number" step="0.1" required pattern="[0-9]"/>
+                <input name="giatien" class="nhap" min="0" type="number" step="0.1" required pattern="[0-9]"/>
                 <h4 >Mô Tả:</h4 >
-                <textarea rows="5" cols="40"></textarea>
+                <textarea  rows="5" cols="40"></textarea>
                 <h4 >Người liên hệ <a style="color: red;">*</a>:</h4 >
-                <input class="nhap" type="text" required pattern="[a-z]\[A-Z]"/>
+                <input name="nguoilienhe" class="nhap" type="text" required pattern="[a-z]\[A-Z]"/>
                 <h4 >Số điện thoại người liên hệ <a style="color: red;">*</a>:</h4 >
-                <input class="nhap" type="tel"required pattern="[\+][\(]\d{2}[\)]\S{9,}" title="Số điện thoại (Theo dạng: +(84)012345678)" >
+                <input name="sodienthoai" class="nhap" type="tel"required pattern="[\+][\(]\d{2}[\)]\S{9,}" title="Số điện thoại (Theo dạng: +(84)012345678)" >
                 <h4 >Email <a style="color: red;">*</a>:</h4 >
-                <input class="nhap" type="email" />
+                <input name="email" class="nhap" type="email" />
                 <p>
-                <input type="submit" value="Lưu" class="luu" />
+                <input type="submit" value="Lưu" class="luu" onclick="quanly" />
                 <input type="reset" value="Xóa" class="xoa"/></p>
-                <!-- <p>
-                <button class="luu"  type="submit">Lưu</button>
-                <button class="xoa" type="reset">Xóa</button> </p> -->
                 </div>
         </div>
         <div class="content-right">
@@ -68,7 +66,7 @@
                 <h3 style="font-weight: normal;">QUẢN LÝ DANH SÁCH XE CỘ</h3>
             </div>
             <input class="timkiem" class="timkiem" type="text" placeholder="Tìm kiếm ...">
-            <table  > 
+            <table id="danhsach" > 
                 <tr>
                     <th>STT</th>
                     <th>Hình Ảnh</th>
@@ -82,5 +80,6 @@
             </table>
         </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
